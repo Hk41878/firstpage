@@ -281,7 +281,7 @@ nav svg{
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 0;
+    top: -10px;
     left: 29px;
     z-index: 8;
    }
