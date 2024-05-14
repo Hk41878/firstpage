@@ -263,7 +263,7 @@ nav svg{
        border-radius: 20%;
        box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.3);
        background-color: rgba(99, 99, 99, 0.25); 
-       color: goldenrod;
+       color: #daa520;
    }
    .blurry-background{
     position: absolute;
@@ -282,7 +282,7 @@ nav svg{
     justify-content: center;
     align-items: center;
     top: 0;
-    right: 0;
+    left: 29px;
     z-index: 8;
    }
    #float-close-button{
