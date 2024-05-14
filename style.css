@@ -156,6 +156,7 @@ nav svg{
 .menu-type h2{  
     color: var(--text-color);
     padding-left: 8px;
+    text-decoration: underline;
 }
 .menu-type h5{  
     color: var(--text-color);
