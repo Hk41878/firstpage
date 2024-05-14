@@ -1,5 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap');
+@keyframes slide-left{
+    from{
+        left: -200px;
+        opacity: 0;
+    }
+    to{
+        left: 15px;
+        opacity: 1;
+    }
+}
+@keyframes slide-right{
+    from{
+        right: -200px;
+        opacity: 0;
+    }
+    to{
+        right: -50px;
+        opacity: 1;
+    }
+}
+@keyframes slide-top{
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    10%{
+        top: -90px;
+        opacity: 8;
+    }
+    to{
+        top: 15px;
+        opacity: 1;
+    }
+}
+@keyframes center-image{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes botom-menue-button{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 :root{
     --color-1:#0f1016;
@@ -34,7 +84,7 @@ nav{
 }
 nav a{
     height: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -112,8 +162,8 @@ nav svg{
     left: 10px;
 }
 .leftbox{
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     background-color: #110f0fda;
     display: flex;
     justify-content: center;
@@ -124,15 +174,15 @@ nav svg{
     bottom: -50px;
 }
 #lib{
-    height: 80px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
 #lib svg{
-    color: var(--text-color);
+    color: #e9f0c4;
     display: flex;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 11px;
+    right: 10px;
 }
 .outer-div {
     background-image: url(glassbackground.jpg);
@@ -238,7 +288,317 @@ nav svg{
 
    }
 
-@media (max-width:650px){
+   
+/*FULL BODY*/
+
+.full-body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+/* top left background image */
+.tlbo{
+    height: 150px;
+    width: 150px;
+    justify-content: left;
+    align-items: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    
+}
+ .tlbo #tlbi{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  
+ }
+
+ #tlbi img{
+    width: 120px;
+    position: fixed;
+ }
+
+
+ /* top right background image */
+
+
+.trbo{
+    height: 150px;
+    width: 150px;
+    align-items: right;
+    position: fixed;
+    z-index: -3;
+    right: 0;
+    top: 0;
+}
+#trbi{   
+    height: 100%;
+    position: absolute;
+    right: 0;
+ }
+ #trbi img{
+    width: 120px;
+    display: flex;
+    transform: scaleX(-1);
+ }
+
+ p1{
+    display: none;
+}
+
+/* Left bottem background */
+
+.blbo{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    position: fixed;
+    z-index: -3;
+    left: 0;
+    bottom: 0;
+}
+#blbi{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: left;
+    left: 0;
+    bottom: 0;
+}
+#blbi{
+    width: 130px;
+    display: flex;
+}
+
+/* Right bottem background */
+
+.brbo{
+
+    height: 150px;
+    width: 150px;
+    display: flex;
+    position: fixed;
+    z-index: -3;
+    bottom: 0;
+    right: 0;
+
+}
+
+#brbi{
+
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: right;
+    right: 0;
+    bottom: 0;
+
+}
+
+#brbi img{
+    width: 130px;
+    display: flex;
+    transform: scaleX(-1);
+}
+
+/*TOP BODY*/
+
+.top-body{
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.top-body #top-center-box{
+
+    height: 60px;
+    width: 140px;
+}
+/*logo*/
+
+#logo a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img{
+    width: 180px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    opacity: 0;
+                    /*animation*/
+                    animation-name: slide-top;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+}
+
+/*CENTER BODY*/
+
+.center-body{
+
+    height: 400px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#center-image{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#center-image a img{
+    height: 300px;
+    width: auto;
+    opacity: 0;
+                    /*animation*/
+                    animation-name: center-image;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+
+}
+/*BOTTOM BODY*/
+
+.bottom-body{
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTTOM BODY LEFT BOX*/
+.bottom-body #languagesmob-index{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    color: wheat;
+    width: 80px;
+    height: 40px;
+    border-radius: 15%;
+    border-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    opacity: 0;
+                    /*animation*/
+                    animation-name: slide-left;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+}
+#languagesmob option{
+    background-color: rgb(31, 31, 31);
+   color: white;
+}
+#languagesmob option:hover{
+    color: gold;
+}
+
+/*BOTTOM BODY CENTER BOX*/
+.bottom-body #bottom-center-box{
+
+    height: 80px;
+    width: 100px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+}
+#bottom-center-box svg{
+                        /*animation*/
+                        animation-name: botom-menue-button;
+                        animation-duration: 1.5s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: 1;
+}
+
+#bottom-center-box a{
+    display: non;
+    position: absolute;
+    top: 0;
+}
+#bottom-center-box a h4{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: -12px;
+    left: 6px;
+}
+
+
+/*BOTTOM BODY RIGHT BOX*/
+.bottom-body #bottom-right-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    height: 120px;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    right: -50px;
+    bottom: -50px;
+    opacity: 0;
+                    /*animation*/
+                    animation-name: slide-right;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+}
+.bottom-body #bottom-right-box a svg{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+@media (max-width:680px){
     .links-container{
 
         flex-direction: column;
@@ -247,7 +607,7 @@ nav svg{
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 300px;
+        width: 250px;
         background-color: var(--color-1);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
         transition: 0.5s ease-out;
@@ -260,6 +620,7 @@ nav svg{
         width: 100%;
         padding: 20px 30px;
         justify-content: flex-start;
+        text-align: unset;
     }
 
     .open-sidebar-button, .close-sidebar-button{
@@ -291,13 +652,14 @@ nav svg{
         top: 5px;
         left: 50%;
         transform: translateX(-50%);
-        
     }
     .languagesmob{
         height: 60px;
         width: 80px;
         display: flex;
         position: absolute;
+        justify-content: center;
+        align-items: center;
     }
     #languagesmob{
         background-color: var(--color-1);
@@ -312,7 +674,7 @@ nav svg{
         position: absolute;
         justify-content: center;
         align-items: center;
-        top: 10px;
+        left: 0px;
         
     }
 
@@ -341,4 +703,16 @@ nav svg{
         padding-left: 15px;
     }
 
+}
+
+@media (min-width:830px){
+    nav a{
+        padding: 0 20px;
+    }
+}
+
+@media (min-width:1000px){
+    nav a{
+        padding: 0 40px;
+    }
 }
