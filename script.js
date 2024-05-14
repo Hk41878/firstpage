@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('click', function(event) {
         if (outerDiv.style.right === '0px' && event.target !== outerDiv && event.target !== floatCloseButton) {
-            outerDiv.style.right = '-280px';
+            outerDiv.style.right = '-290px';
         }
     });
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeFlote.addEventListener('click', function(event) {
-        outerDiv.style.right = '-280px';
+        outerDiv.style.right = '-290px';
         event.stopPropagation();
     });
 
