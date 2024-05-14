@@ -71,7 +71,7 @@
         right: 0;
     }
     to{
-        right: -280px;
+        right: -290px;
     }
 }
 
@@ -242,7 +242,7 @@ nav svg{
    justify-content: center;
    align-items: center;
    position: fixed;
-   right: -280px;
+   right: -290px;
    transition: right 0.5s ease-in-out;
    border-radius: 20px;
    z-index: 8;
@@ -254,6 +254,7 @@ nav svg{
     box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.2);
 }
    .inner-div {
+
        height: 480px;
        width: 320px;
        display: flex;
@@ -281,17 +282,19 @@ nav svg{
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: -10px;
-    left: 29px;
+    top: 0;
+    right: 0;
     z-index: 8;
    }
    #float-close-button{
+    background-color: #00000050;
+    border-radius: 20%;  
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
     transition: transform 0.5s ease;
    }
    .rotate {
@@ -343,7 +346,18 @@ nav svg{
     position: absolute;
     bottom: 0;
     right: 0;
+
    }
+
+   .drink-abbinati-menu .glassimg-fr img{
+    width: 80px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+   }
+
    .drink-abbinati-menu .limeimg img{
     width: 50px;
     display: flex;
