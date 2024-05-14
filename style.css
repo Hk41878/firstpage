@@ -61,15 +61,14 @@ nav svg{
     display: none;
 }
 #languagesweb{
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    color: var(--text-color);
     background-color: var(--color-1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    color: rgb(255, 166, 0);
     width: 80px;
-    height: 60px;
-    border-color: var(--color-1);
+    height: 40px;
+    border-radius: 15%;
+    border-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 #languagesmob{
     display: none;
@@ -294,16 +293,27 @@ nav svg{
         transform: translateX(-50%);
         
     }
-
+    .languagesmob{
+        height: 60px;
+        width: 80px;
+        display: flex;
+        position: absolute;
+    }
     #languagesmob{
+        background-color: var(--color-1);
+        backdrop-filter: blur(2px);
+        color: rgb(255, 166, 0);
+        width: 80px;
+        height: 40px;
+        border-radius: 15%;
+        border-color: rgb(255, 255, 255);
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
         display: block;
         position: absolute;
-        color: var(--text-color);
-        background-color: var(--color-1);
-        backdrop-filter: blur(5px);
-        width: 80px;
-        height: 60px;
-        border-color: var(--color-1);
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        
     }
 
     #languagesweb{
