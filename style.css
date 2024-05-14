@@ -274,6 +274,30 @@ nav svg{
     -webkit-backdrop-filter: blur(10px);
     filter: blur(5px);
    }
+   .float-close-button{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 8;
+   }
+   #float-close-button{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    transition: transform 0.5s ease;
+   }
+   .rotate {
+    transform: rotate(360deg);
+}
+
    .drink-abbinati-text{
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
