@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Primi-piatti</title>
+</head>
+<body>
+
+    <div class="bgbody">
+            <div id="tlbi"><img src="topleft.png" alt="topleft"> </div>
+            <div id="trbi"> <img src="topleft.png" alt="topright"> </div>
+            <div id="blbi"> <img src="bottomleft.png" alt="bottomleft"> </div>
+            <div id="brbi"><img src="bottomleft.png" alt="bottomright"></div>
+    </div>
+
+    <div class="rightbox">
+        <a href="primi-en.html">
+            <div id="rib">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle" stroke="#e9f0c4" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#e9f0c4"> <title id="chevronRightIconTitle">Chevron Right</title> <polyline points="10 6 16 12 10 18 10 18"/> </svg>
+            </div>
+        </a>
+    </div>
+
+    <select name="" id="languagesmob" size="" onchange="window.location.href=this.value;">
+        <option value="index.html">English</option>
+        <option value="menu-fr.html">Française</option>
+        <option value="menu-it.html">Italiano</option>
+    </select>
+
+    <img src="logo.png" alt="logo" id="logoimgmob">
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <img src="logo.png" alt="logo" id="logoimgweb">
+            <select name="" id="languagesweb" size="" onchange="window.location.href=this.value;">
+                <option value="index.html">English</option>
+                <option value="menu-fr.html">Française</option>
+                <option value="menu-it.html">Italiano</option>
+            </select>           
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Links</a>
+            <a href="#">Contect</a>
+        </div>
+    </nav>
+
+    <div class="outer-div" id="outerDiv">
+        <div class="inner-div" id="innerDiv">
+            <div class="blurry-background"></div>
+                <div class="drink-abbinati-text"><p>Drink abbinati  ToccaQui</p></div>
+                <div class="drink-abbinati-menu">
+                <h1>DRINK ABBINATI</h1><br><br>
+                <h2>Paloma</h2>
+                <h5>Frurra e rinfrescante é uno dei cockrail più bevuti in Messico.<br>Tequila, Lime, Soda al Pompelmo e crusta di Sale </h5><br>
+                <h2>BATANGA</h2>
+                <h5>Creato nel 1960 a La Capilla da Javier Delgato Corona<br>Una semplice ma incredibile combinazione di Tequila, Lime, sale e coca cola. Crusta di sale</h5><br>
+                <h2>MEXIXO Y SPRITZ</h2>
+                <h5>Uno Spritz diverso che unische il Mexico alla nostra Puglia.<br>PassionFruit, Orange Bitter , Aperol, Succo d'arancia Prosecco e Soda.</h5>
+                <div class="glassimg"><img src="glassimg.png" alt="glassimage"></div>
+                <div class="limeimg"><img src="limeimg.png" alt=""></div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="menu-type">
+        <h1>Appetizers</h1>
+        <h2>Bruschetta al Pomodoro</h2>
+        <h5>Toasted bread topped with diced tomatoes, garlic, basil, and olive oil</h5>
+        <br>
+        <h2>Caprese Salad</h2>
+        <h5>Slices of fresh mozzarella cheese, ripe tomatoes, and basil leaves, drizzled with balsamic glaze.</h5>
+        <br>
+        <h2>Arancini</h2>
+        <h5>Deep-fried risotto balls stuffed with mozzarella cheese, peas, and marinara sauce.</h5>
+        <br>
+        <h2>Calamari Fritti</h2>
+        <h5>Crispy fried calamari served with marinara sauce and lemon wedges.</h5><br>
+        <br>
+        <h2>Antipasto Platter</h2>
+        <h5>A selection of cured meats, cheeses, olives, and marinated vegetables, served with crusty bread.</h5>
+        <h5>Toasted bread topped with diced tomatoes, garlic, basil, and olive oil</h5>
+        <br>
+        <h2>Caprese Salad</h2>
+        <h5>Slices of fresh mozzarella cheese, ripe tomatoes, and basil leaves, drizzled with balsamic glaze.</h5>
+        <br>
+        <h2>Arancini</h2>
+        <h5>Deep-fried risotto balls stuffed with mozzarella cheese, peas, and marinara sauce.</h5>
+        <br>
+        <h2>Calamari Fritti</h2>
+        <h5>Crispy fried calamari served with marinara sauce and lemon wedges.</h5><br>
+        <br>
+        <h2>Antipasto Platter</h2>
+        <h5>A selection of cured meats, cheeses, olives, and marinated vegetables, served with crusty bread.</h5>
+        <br><br><br><br>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
