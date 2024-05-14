@@ -17,45 +17,7 @@ body{
     font-family: Arial, sans-serif;
     margin-right: 50px;
 }
-.bgbody{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    justify-items: center;
-    align-items: center;
-    z-index: -99;
-}
-.bgbody #tlbi img{
-    width: 25%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-.bgbody #trbi img{
-    width: 25%;
-    height: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: scaleX(-1);
-}
-.bgbody #blbi img{
-    width: 25%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-.bgbody #brbi img{
-    width: 25%;
-    height: auto;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    transform: scaleX(-1);
-}
+
 nav{
     height: 60px;
     background-color:#0f1016 ;
@@ -266,6 +228,15 @@ nav svg{
     position: absolute;
     top: 0px;
     right: 86px;
+   }
+   .bottombg #bottombg img{
+    width: 95%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: -15px;
+    z-index: -99;
+
    }
 
 @media (max-width:650px){
