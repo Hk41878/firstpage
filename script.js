@@ -1,18 +1,26 @@
-const outerDiv = document.getElementById('outerDiv');
-const innerDiv = document.getElementById('innerDiv');
+document.addEventListener('DOMContentLoaded', function() {
+    const outerDiv = document.getElementById('outerDiv');
+    const closeFlote = document.getElementById('closeFlote');
+    const floatCloseButton = document.getElementById('float-close-button');
 
-document.addEventListener('click', function(event) {
-    if (outerDiv.style.right === '0px' && event.target !== outerDiv && event.target !== innerDiv) {
+    document.addEventListener('click', function(event) {
+        if (outerDiv.style.right === '0px' && event.target !== outerDiv && event.target !== floatCloseButton) {
+            outerDiv.style.right = '-280px';
+        }
+    });
+
+    outerDiv.addEventListener('click', function(event) {
+        outerDiv.style.right = '0';
+        event.stopPropagation();
+        floatCloseButton.classList.add('rotate'); // Add the 'rotate' class to trigger the rotation animation
+    });
+
+    closeFlote.addEventListener('click', function(event) {
         outerDiv.style.right = '-280px';
-    }
-});
+        event.stopPropagation();
+    });
 
-outerDiv.addEventListener('click', function(event) {
-    outerDiv.style.right = '0';
-    event.stopPropagation();
-});
-
-innerDiv.addEventListener('click', function(event) {
-    outerDiv.style.right = '0';
-    event.stopPropagation();
+    floatCloseButton.addEventListener('transitionend', function() {
+        floatCloseButton.classList.remove('rotate'); // Remove the 'rotate' class after the animation completes
+    });
 });
