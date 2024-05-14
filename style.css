@@ -10,13 +10,23 @@
         opacity: 1;
     }
 }
-@keyframes slide-right{
+@keyframes slide-right-button{
     from{
         right: -200px;
         opacity: 0;
     }
     to{
         right: -50px;
+        opacity: 1;
+    }
+}
+@keyframes slide-left-button{
+    from{
+        left: -200px;
+        opacity: 0;
+    }
+    to{
+        left: -50px;
         opacity: 1;
     }
 }
@@ -48,6 +58,20 @@
     }
     to{
         transform: rotate(360deg);
+    }
+}
+@keyframes float-menu{
+    from{
+        right: 520px;
+    }
+    35%{
+        right: 0;
+    }
+    70%{
+        right: 0;
+    }
+    to{
+        right: -280px;
     }
 }
 
@@ -148,6 +172,14 @@ nav svg{
     position: fixed;
     right: -50px;
     bottom: -50px;
+                    /*animation*/
+                    animation-name: slide-right-button;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
 }
 
 #rib{
@@ -172,6 +204,15 @@ nav svg{
     position: fixed;
     left: -50px;
     bottom: -50px;
+                    /*animation*/
+                    animation-name: slide-left-button;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0.2s;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+
 }
 #lib{
     height: 60px;
@@ -185,6 +226,14 @@ nav svg{
     right: 10px;
 }
 .outer-div {
+                        /*animation*/
+                    animation-name: float-menu;
+                    animation-duration: 1.8s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0;
+                    animation-iteration-count: 1;
+                    animation-direction: normal;
+                    animation-fill-mode: none;
     background-image: url(glassbackground.jpg);
     background-size: 100% auto;
     height: 480px;
@@ -194,7 +243,7 @@ nav svg{
    align-items: center;
    position: fixed;
    right: -280px;
-   transition: right 0.3s ease-in-out;
+   transition: right 0.5s ease-in-out;
    border-radius: 20px;
    z-index: 8;
    bottom: 75px;
@@ -349,9 +398,7 @@ nav svg{
     transform: scaleX(-1);
  }
 
- p1{
-    display: none;
-}
+
 
 /* Left bottem background */
 
@@ -583,7 +630,7 @@ nav svg{
     bottom: -50px;
     opacity: 0;
                     /*animation*/
-                    animation-name: slide-right;
+                    animation-name: slide-right-button;
                     animation-duration: 1s;
                     animation-timing-function: ease-in-out;
                     animation-delay: 0.2s;
