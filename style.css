@@ -250,7 +250,6 @@ nav svg{
                     animation-iteration-count: 1;
                     animation-direction: normal;
                     animation-fill-mode: none;
-    background-image: url(glassbackground.jpg);
     background-size: 100% auto;
     height: 480px;
    width: 320px;
